@@ -1,0 +1,27 @@
+{% extends 'apps/main.html' %}
+{% load static %}
+{% block content %}
+
+<br>
+
+<div class="row">
+    <div class="col-md-6" style="margin: 0px auto">
+        <div class="card card-body">
+            <form method="POST">
+                {% csrf_token %}
+                <table class="table">
+                    <td></td>
+                    <td>{{ form }}</td>
+                    <td></td>
+                    <td>
+                        <a href="{% url 'home' %}" class="btn btn-outline-secondary btn-sm btn-block">Cancel</a>
+                        <input type="submit" name="Confirm" value="Confirm"
+                            class="btn btn-outline-primary btn-sm btn-block">
+                    </td>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
