@@ -5,4 +5,4 @@ Django | A dashboard website <br/>
 >. Simple user's authentication and authorization <br/>
 
 # screenshots
-<img src="./dashboard_d/apps/static/images/Screenshot 2022-03-17 170044.png">
+<img src="./apps/static/images/Screenshot 2022-03-17 170044.png">
